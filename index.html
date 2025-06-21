@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo" tabindex="0" aria-label="Developer Portfolio">PORTFOLIO</div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" tabindex="0">
+      <h1>Hi, I'm Naresh</h1>
+      <p>A passionate web developer building modern and responsive websites.</p>
+      <button class="btn-primary" onclick="scrollToSection('projects')">View Projects</button>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here are a few projects I've worked on recently.</p>
+      <div class="projects-grid">
+        <article class="project-card" tabindex="0" aria-label="Project Portfolio Website">
+          <img src="https://unsplash.it/400/200?image=1050" alt="Portfolio Website Screenshot" />
+          <h3>Portfolio Website</h3>
+          <p>A sleek personal portfolio to showcase my projects and skills. Built with HTML, CSS &amp; JavaScript.</p>
+          <a href="#" target="_blank" rel="noopener">View Project</a>
+        </article>
+        <article class="project-card" tabindex="0" aria-label="Chat Application">
+          <img src="https://unsplash.it/400/200?image=1024" alt="Chat Application Screenshot" />
+          <h3>Real-time Chat App</h3>
+          <p>A real-time chat application with WebSocket integration for instant messaging across users.</p>
+          <a href="#" target="_blank" rel="noopener">View Project</a>
+        </article>
+        <article class="project-card" tabindex="0" aria-label="E-Commerce Website">
+          <img src="https://unsplash.it/400/200?image=903" alt="E-Commerce Website Screenshot" />
+          <h3>E-Commerce Website</h3>
+          <p>An online store platform with product browsing, cart functionality, and secure checkout.</p>
+          <a href="#" target="_blank" rel="noopener">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>Technologies and tools I work with regularly.</p>
+      <div class="skills-list" aria-label="Skills list">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Python</div>
+        <div class="skill">Git</div>
+        <div class="skill">Responsive Design</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to reach out via email or through social links below.</p>
+      <p><a href="mailto:nareshn3116@gmail.com" aria-label="Send email to Naresh">nareshn3116@gmail.com</a></p>
+      <form id="contactForm" aria-label="Contact form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true" />
+        <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true" />
+        <textarea id="message" name="message" rows="4" placeholder="Your Message" required aria-required="true"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formStatus" aria-live="polite" style="margin-top: 1rem;"></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 Naresh All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
